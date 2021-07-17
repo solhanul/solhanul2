@@ -1,0 +1,298 @@
+<html>
+<head>
+    <title>Gang_Doyun's Page</title>
+	<style>
+	    * {
+		   margin: 0; padding: 0;
+		   font-family: '맑은 고딕', 'Malgun Gothic', Gothic, sans-serif;
+		}
+		
+		a { text-decoration: none; }
+		a:hover {color:#92a8d1;}
+		
+		li { list-style: none; }
+	</style>
+	<style>
+	    .pull-left { float: left; }
+		.pull-right { float: right; }
+	</style>
+	<style>
+	    body {
+		    width: 960px; margin: 0 auto;
+			background: #eeeeee;
+		}
+		
+		#page-wrapper {
+background: rgb(146,168,209);
+background: -moz-linear-gradient(-45deg,  rgba(146,168,209,1) 0%, rgba(247,202,201,1) 100%); 
+background: -webkit-linear-gradient(-45deg,  rgba(146,168,209,1) 0%,rgba(247,202,201,1) 100%); 
+background: linear-gradient(135deg,  rgba(146,168,209,1) 0%,rgba(247,202,201,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#92a8d1', endColorstr='#f7cac9',GradientType=1 );
+			margin: 40px 0; padding: 10px 20px;
+			border-radius: 5px;
+			box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+		}
+	</style>
+	<style>
+	    #main-header { padding: 40px 50px; }
+		
+		.master-title{
+		    font-size: 30px;
+			color: #181818;
+		}
+		.master-description {
+		    font-size: 15px; font-weight: 500;
+			color: #383838;
+		}
+	</style>
+	<style>
+	    #main-navigation {
+		    border-top: 1px solid #92a8d1;
+			border-bottom: 1px solid #92a8d1;
+			margin-bottom: 20px;
+			height: 40px;
+		}
+		
+		.outer-menu-item {
+		    float: left;
+			position: relative;
+		}
+		.outer-menu-item:hover {
+		    background: #92a8d1;
+			color: white;
+		}
+		
+		.menu-title {
+		    display: block;
+			height: 30px; line-height: 30px;
+			text-align: center;
+			padding: 5px 20px;
+		}
+		
+		.inner-menu {
+		    display: none;
+			position: absolute;
+			top: 40px; left: 0;
+			width: 100%;
+			background: white;
+			box-shadow: 0 2px 6px #92a8d1;
+			z-index: 1000;
+			text-align: center;
+		}
+		.inner-menu-item > a {
+		    display: block;
+			padding: 5px 10px;
+			color: #92a8d1;
+		}
+		.inner-menu-item > a:hover {
+		    background-color: white;
+			color: #f7cac9;
+		}
+	</style>
+	<style>
+	    .search-bar {
+		    height: 26px;
+			padding: 7px;
+		}
+		.input-search {
+		    display: block;
+			float: left;
+			background-color: white;
+			border: 1px solid #92a8d1;
+			border-radius: 15px 0 0 15px;
+			box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+			width: 120px; height: 24px;
+			padding: 0 0 0 10px;
+			font-size: 12px;
+			color: #92a8d1;
+		}
+		.input-search:focus {
+		    border-color: #92a8d1;
+			outline: 0;
+			box-shadow: inset 0 1px 1px #92a8d1;
+		}
+		.input-search-submit {
+		    display: block;
+			width: 50px; height: 24px;
+			border-radius: 0 15px 15px 0;
+			border:1px solid #92a8d1;
+			background-color: #92a8d1;
+			margin-left: -1px;
+			display: inline-block;
+		}
+	</style>
+	<style>
+	    #content { overflow: hidden; }
+		
+		#main-section {
+		    float: left;
+			width: 710px;
+		}
+		#main-aside {
+		    float: right;
+			width: 200px;
+		}
+	</style>
+	<style>
+	    article {
+		    padding: 0 10px 20px 10px;
+			border-bottom: 1px solid #C8C8C8;
+		}
+		
+		.article-header { padding: 20px 0; }
+		.article-title {
+		    font-size: 25px;
+			font-weight: 500;
+			padding-bottom: 10px;
+		}
+		.article-date { font-size: 13px; }
+		.article-body {
+		    font-size: 14px;
+		}
+	</style>
+	<style>
+	    .aside-list { padding: 10px 0 30px 0; }
+		.aside-list > h3 {
+		    font-size: 15px;
+			font-weight: 600;
+		}
+		.aside-list li a {
+		    margin-left: 8px;
+			font-size: 13px;
+			color: #6C6C6C
+		}
+.picture {width:90%;}
+.picture1 {width:70%;}
+	</style>
+
+                        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script>
+    $(document).ready(function () {
+	    $('.outer-menu-item').hover(function () {
+		    $(this).find('.inner-menu').show();
+		}, function () {
+		    $(this).find('.inner-menu').hide();
+		});
+	});
+</script>
+</head>
+<body>
+    <div id="page-wrapper">
+	    <header id="main-header">
+		    <hgroup>
+		                <h1 class="master-title">Gang_Doyun's Page</h1>
+				<h2 class="master-description">www.강도윤</h2>
+		    </hgroup>
+	    </header>
+		<nav id="main-navigation">
+		    <div class="pull-left">
+			    <ul class="outer-menu">
+				   <li class="outer-menu-item">
+				      <span class="menu-title">세븐틴</span>
+					  <ul class="inner-menu">
+					     <li class="inner-menu-item"><a href="https://blog.naver.com/efg010/222125956194">29시</a></li>
+						 <li class="inner-menu-item"><a href="https://blog.naver.com/bts0902-/222269018586">우령</a></li>
+                                                                                                  <li class="inner-menu-item"><a href="https://blog.naver.com/hayeong1660/222230287548">혜영</a></li>
+                                                                                                  <li class="inner-menu-item"><a href="https://blog.naver.com/whsn0526">백설</a></li>
+                                                                                                  <li class="inner-menu-item"><a href="https://m.blog.naver.com/PostList.nhn?blogId=tommydino0211">그냥</a></li>
+<li class="inner-menu-item"><a href="https://m.blog.naver.com/PostView.nhn?blogId=ijustam510&logNo=222328299930&isFromSearchAddView=true">M.W</a></li>
+					  </ul>
+				   </li>
+				   <li class="outer-menu-item">
+				       <span class="menu-title">세븐틴2</span>
+					   <ul class="inner-menu" style="display: none;">
+					<li class="inner-menu-item"><a href="https://blog.naver.com/jeemin4347/222360627589">초햄</a></li>
+						<li class="inner-menu-item"><a href="https://blog.naver.com/pjo6264/222355058867">리아</a></li>
+						<li class="inner-menu-item"><a href="https://blog.naver.com/hopang_">츄르</a></li>
+						<li class="inner-menu-item"><a href="https://blog.naver.com/seolha_06/222385381508">설하</a></li>
+						<li class="inner-menu-item"><a href="https://m.blog.naver.com/rookimiso/222361840609">뀨</a></li>
+						<li class="inner-menu-item"><a href="https://blog.naver.com/jhkimlee4/222423001799">새벽의물</a></li>
+						<li class="inner-menu-item"><a href="https://m.blog.naver.com/sailor_mars38/222429124659">캐서린</a></li>
+				   </ul>
+				</li>
+				<li class="outer-menu-item">
+				    <span class="menu-title">무제</span>
+					<ul class="inner-menu" style="display: none;">
+					    <li class="inner-menu-item"><a href="https://namu.wiki/w/%ED%95%B4%EB%A6%AC%20%ED%8F%AC%ED%84%B0%20%EC%8B%9C%EB%A6%AC%EC%A6%88">해리포터</a></li>
+					    <li class="inner-menu-item"><a href="https://scbay.suncheon.go.kr/garden/0005/0002/0002/">탄생화/탄생목</a></li>
+					</ul>
+				</li>
+				 </ul>
+			</div>
+			<div class="pull-right">
+			   <div class="search-bar">
+      <form class="search">
+				      <input type="text" id="text" class="input-search" onkeydown="enterSearch()">
+					  <input type="submit" class="input-search-submit" value="검색" onclick="myFunction()">
+				  </form>
+			   </div>
+			</div>
+		</nav>
+		<div id="content">
+		    <section id="main-section">
+			   <article>
+			       <div class="article-header">
+				      <h1 class="article-title">세븐틴</h1>
+					  <p class="article-date">2015년 5월 26일</p>
+				   </div>
+				   <div class="article-body">
+				      <img src="https://t1.daumcdn.net/cfile/tistory/2461723858A0527D23" class="picture">
+					  <br>
+					  <br>
+					  <p>13+3+1=17</p>
+					  <br>
+					  <p>SAY THE NAME, SEVENTEEN! 안녕하세요, 세븐틴입니다!</p>
+				   </div>
+			   </article>
+			   <article>
+			       <div class="article-header">
+				      <h1 class="article-title">디노(dino)</h1>
+					  <p class="article-date">1999년 2월 11일</p>
+				   </div>
+				   <div class="article-body">
+				       <img src="https://i.pinimg.com/originals/f7/9c/31/f79c31a02782a9a2fe2c3ea7c0d69342.jpg"  class="picture1">
+					   <br>
+					   <p>이찬 (李燦 오얏 리, 빛날 찬)</p>
+					   <br>
+					   <p>찬반토론(찬이열정 반만 닮아도 토익만점은 물론이다)</p>
+				   </div>
+			   </article>
+			</section>
+			<aside id="main-aside">
+			    <div class="aside-list">
+				    <h3>유튜브</h3>
+					<ul>
+					    <li><a href="https://www.youtube.com/watch?v=lfNnBqnD_Xk">승관_민규</a></li>
+						<li><a href="https://www.youtube.com/watch?v=Uosq0aiFhJY">민규_승관_지훈_찬</a></li>
+					</ul>
+			    <div>
+				<div class="aside-list">
+				    <h3>인스타</h3>
+					<ul>
+						<li><a href="https://www.instagram.com/saythename_17/">세븐틴</a></li>
+					                  <li><a href="https://www.instagram.com/sound_of_coups/">승철</a></li>
+						<li><a href="https://www.instagram.com/jeonghaniyoo_n/">정한</a></li>
+						<li><a href="https://www.instagram.com/joshuahong951230/">지수</a></li>
+						<li><a href="https://www.instagram.com/woozi_universefactory/">지훈</a></li>
+						<li><a href="https://www.instagram.com/min9yu_k/">민규</a></li>
+						<li><a href="https://www.instagram.com/xuminghao_o/">명호</a></li>
+						<li><a href="https://www.instagram.com/dk_is_dokyeom/">도겸</a></li>
+						<li><a href="https://www.instagram.com/pledis_boos/">승관</a></li>
+						<li><a href="https://www.instagram.com/chwenotchew/">한솔</a></li>
+					</ul>
+				</div>
+                                                                           <div class="aside-list">
+				    <h3>사진</h3>
+					<ul>
+						<li><a href="#"></a></li>
+						<li><a href="#">데이터</a></li>
+					</ul>
+			    <div>
+			</div></div></aside>
+		</div>
+		<footer id="main-footer">
+		    <a href="file:///C:/Users/lg/Desktop/Comprehensive%20Example/GangDoyun's.html">Gang_Doyun's Profile</a>
+		</footer>
+	</div>
+</body>
+</html>
